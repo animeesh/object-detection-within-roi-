@@ -6,13 +6,8 @@ import argparse
 import datetime
 import imghdr
 import math
-from email.mime.image import MIMEImage
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from pathlib import Path
-
 import numpy as np
-
 import torch
 import torch.backends.cudnn as cudnn
 from numpy import random
@@ -22,7 +17,6 @@ from utils.datasets import LoadStreams, LoadImages
 from utils.general import check_img_size, check_requirements, check_imshow, non_max_suppression, apply_classifier, \
     scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path
 from utils.torch_utils import select_device, load_classifier, time_synchronized, TracedModel
-#from AILogics import *
 from AILogics import *
 
 #import datetime
